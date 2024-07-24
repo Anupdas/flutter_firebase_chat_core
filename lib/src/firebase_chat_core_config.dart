@@ -10,8 +10,9 @@ class FirebaseChatCoreConfig {
   const FirebaseChatCoreConfig(
     this.firebaseAppName,
     this.roomsCollectionName,
-    this.usersCollectionName,
-  );
+    this.usersCollectionName, {
+    this.databaseId,
+  });
 
   /// Property to set custom firebase app name.
   final String? firebaseAppName;
@@ -21,4 +22,7 @@ class FirebaseChatCoreConfig {
 
   /// Property to set users collection name.
   final String usersCollectionName;
+
+  /// Property to set the database url.
+  final String? databaseId;
 }
